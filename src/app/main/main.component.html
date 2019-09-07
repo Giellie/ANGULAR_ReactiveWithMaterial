@@ -1,0 +1,48 @@
+
+<form class="example-form" [formGroup]="profileForm">
+
+    <br>
+    <br>
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="First Name" formControlName="firstName">
+    </mat-form-field>
+
+    
+    <br>
+    <br>
+    <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+    </label>
+
+<!--
+    <p>{{name.value}}</p>
+    <br>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Favorite food" value="Sushi">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+    <br>
+    <br>
+    <mat-form-field>
+        <mat-select placeholder="Favorite food">
+            <mat-option *ngFor="let test of testClassArray" [value]="test.name">
+                {{test.description}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+-->
+
+</form>
+
+<button type="submit" [disabled]="profileForm.invalid" class="btn btn-primary" (click)="submitClicked()">TEST BUTTON</button>
